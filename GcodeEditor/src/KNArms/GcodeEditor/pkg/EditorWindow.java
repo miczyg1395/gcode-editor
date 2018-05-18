@@ -26,6 +26,7 @@ public class EditorWindow extends JFrame {
         setLayout(new BorderLayout());
         setLocationRelativeTo(null);
         setDefaultLookAndFeelDecorated(true);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     
     public void addComponents(Container pane)
