@@ -15,7 +15,7 @@ import javax.swing.*;
  */
 public class EditorWindow extends JFrame {
     
-    private JMenuBar menuBar;
+    private CustomMenuBar menuBar;
     private JScrollPane outputScrollPane;
     private JScrollPane editorScrollPane;
     
@@ -34,9 +34,7 @@ public class EditorWindow extends JFrame {
         BorderLayout bLayout = new BorderLayout();
         pane.setLayout(bLayout);
 
-        this.menuBar = new JMenuBar();
-        this.menuBar.setPreferredSize(new Dimension(800,25));
-        this.menuBar.setMinimumSize(new Dimension(800,25));
+        this.menuBar = new CustomMenuBar();       
         pane.add(this.menuBar, BorderLayout.PAGE_START);
         
         JTextArea editorArea = new JTextArea();
@@ -59,6 +57,8 @@ public class EditorWindow extends JFrame {
         pane.add(this.outputScrollPane, BorderLayout.PAGE_END);
         
     }
+    
+    
     /**
      * @param args the command line arguments
      */
