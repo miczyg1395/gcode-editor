@@ -8,7 +8,6 @@ package KNArms.GcodeEditor.pkg;
 import java.awt.*;
 import javax.swing.*;
 
-
 /**
  *
  * @author miczyg
@@ -47,16 +46,16 @@ public class EditorWindow extends JFrame {
         
         pane.add(this.editorScrollPane , BorderLayout.CENTER);
         
-        JTextPane outputField = new JTextPane();
+       /*JTextPane outputField = new JTextPane();
         outputField.setEditable(false);
         this.outputScrollPane = new JScrollPane(outputField);
         this.outputScrollPane.setVerticalScrollBarPolicy(
                         JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
         this.outputScrollPane.setPreferredSize(new Dimension(800, 175));
         this.outputScrollPane.setMinimumSize(new Dimension(800, 100));
-        
+        */
+        this.outputScrollPane = new MyScrollPane(); 
         pane.add(this.outputScrollPane, BorderLayout.PAGE_END);
-        
     }
     /**
      * @param args the command line arguments
