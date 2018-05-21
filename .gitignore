@@ -1,0 +1,8 @@
+# Ignoruj wszystko
+*
+# Nie ignoruj markdown
+!*.md
+# Nie ignoruj katalogu z kodem
+!GcodeEditor/src/**
+# Nie ignoruj katalogu doc
+!doc/**
